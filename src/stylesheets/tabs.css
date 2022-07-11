@@ -1,0 +1,25 @@
+.active {
+	font-weight: 600;
+}
+
+.tab-content {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+.tab-list{
+    padding: 9.5px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #D979B6;
+}
+.tab{
+    padding: 10px 10px;
+    font-size: 1.1rem;
+}
+.tab:hover{
+  background-color: #FFA6C6;
+}

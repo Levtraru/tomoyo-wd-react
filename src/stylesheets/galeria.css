@@ -1,0 +1,27 @@
+#contenedor-galeria{
+  border: 1px solid #c5c5c5;
+  width: 99.8%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+.contenedores-galeria{
+  cursor: url('../css/Cursores/Cursor2.png'), auto;
+  margin: 10px;
+  text-align: center;
+  transition: all 500ms ease;
+}
+.contenedores-galeria:hover{
+  background-color: rgba(247, 209, 40, 0.3);
+}
+.contenedores-galeria:active{
+  background-color: rgba(0, 0, 0, 0);
+}
+.img-galeria{
+  max-height: 300px;
+  margin: 10px;
+}
+.txt-galeria{
+  text-align: center;
+  text-justify: center;
+}

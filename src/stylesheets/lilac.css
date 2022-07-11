@@ -1,0 +1,67 @@
+body{
+    background: url('../Imgs/FondoLilac.png');
+}
+
+#global{
+    background: #F8EAE9;
+    box-shadow: 0px 0px 12px #4836D4;
+}
+#bienvenido{
+    color: white;
+    background-color: rgba(137, 121, 217, 0.70);
+}
+
+#logo{
+    background: #8979D9;
+}
+
+#menu li:hover{
+    background-color: #755AC9;
+}
+
+.button-plus{
+    background-color: #8979D9;
+}
+
+#sidebar h4{
+    background: #8979D9;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    box-shadow: 0px 0px 2px #8979D9;
+}
+
+footer{
+    background-color: rgba(137, 121, 217, 0.70);
+}
+
+/* Skin de cursor */
+#to-base,
+#to-dark,
+#to-golden,
+#to-lilac{
+    cursor: url('../css/Cursores/Cursor2-lilac.png'), auto;
+}
+body{
+    cursor: url('../css/Cursores/Pointer-lilac.png'), auto;
+}
+a{
+    cursor: url('../css/Cursores/Cursor2-lilac.png'), auto;
+}
+
+/* jQuery UI
+*/
+.ui-state-hover,
+.ui-state-focus{
+	border: 1px solid #8979D9    !important;
+	background: #8979D9 !important;
+}
+.ui-state-active{
+	border: 1px solid #755AC9 !important;
+	background: #755AC9 !important;
+}
+.ui-accordion-content{
+    border: 1px solid #755AC9 !important; 
+}

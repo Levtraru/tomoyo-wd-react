@@ -1,0 +1,98 @@
+body{
+    background: url('../Imgs/FondoDark.png');
+}
+
+#global{
+    background: #160907;
+    box-shadow: 0px 0px 12px #85101B;
+    color: white;
+}
+#bienvenido{
+    background: #160907;
+    color: #CD4350;
+    opacity: 0.70;
+}
+#bienvenido a{
+    color: #CD4350;
+}
+
+#logo{
+    background: #CD4350;
+    color: #0C0C0C;
+}
+
+#menu li:hover{
+    background-color: #1641DD;
+}
+
+.post h2,
+#about h2{
+    color: #CBCBCB;
+}
+
+.button-plus{
+    background-color: #1641DD;
+}
+
+#sidebar h4{
+    background: #1641DD;
+}
+
+form textarea,
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    box-shadow: 0px 0px 2px #831940;
+    border: 1px solid #C0313F;
+    background-color: #160907;
+    color: white;
+}
+#button-submit{
+    border: 1px solid #1641DD;
+    background-color: #1641DD;
+    color: white;
+}
+footer{
+    background-color: rgba(31, 53, 131, 0.70);
+}
+/* Skin de cursor */
+#to-base,
+#to-dark,
+#to-golden,
+#to-lilac{
+    cursor: url('../css/Cursores/Cursor2-dark.png'), auto;
+}
+body{
+    cursor: url('../css/Cursores/Pointer-dark.png'), auto;
+}
+a{
+    cursor: url('../css/Cursores/Cursor2-dark.png'), auto;
+}
+input{
+    cursor: url('../css/Cursores/TextCursor-dark.png');
+}
+
+/* jQuery UI
+ */
+.ui-accordion-header{
+    background: #160907 !important;
+    color: white !important;
+    border: 1px solid #C0313F !important;
+}
+.ui-widget-content {
+	background: #160907 !important;
+}
+.ui-state-hover,
+.ui-state-focus{
+	border: 1px solid #1641DD !important;
+	background: #1641DD !important;
+}
+.ui-state-active{
+	border: 1px solid #C0313F !important;
+	background: #C0313F !important;
+	color: #ffffff !important;
+}
+.ui-accordion-content{
+    color: white !important;
+    border: 1px solid #C0313F !important; 
+}

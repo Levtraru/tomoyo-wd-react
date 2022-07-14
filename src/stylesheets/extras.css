@@ -1,18 +1,26 @@
 #bienvenido{
     color: white;
+    font-weight: bold;
     /* display: none; */
-    position: absolute;
-    text-align: center;
-    margin-top: 27px;
-    padding: 5px;
+    position: fixed;
+    margin-top: 1rem;
+    margin-left: 87vw;
+    padding: 1rem;
     top: 5%;
     height: auto;
     line-height: 30px;
-    background-color: rgba(217, 121, 182, 0.70);
+    background-color: rgba(224, 84, 178, 0.7);
     border-radius: 20px;
 }
 #bienvenido a{
     font-style: italic;
+}
+#bienvenido p{
+    cursor: url('../imgs/cursores/Cursor2.png'), auto;
+}
+#bienvenido p:hover{
+    text-decoration: underline;
+    color: #ffceed;
 }
 footer{
     text-align: center;

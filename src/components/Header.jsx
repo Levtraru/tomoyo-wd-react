@@ -1,5 +1,5 @@
-import { Search } from '@mui/icons-material';
 import { Link } from 'react-router-dom'
+import { BsSearch as Search } from 'react-icons/bs';
 import styled from 'styled-components';
 
 const Logo = styled.div`
@@ -29,13 +29,15 @@ const Wrapper = styled.li`
   border-radius: 20px;
   height: 46px;
   display: inline-block;
-  &:hover{
-    background-color: #d979b6;
-  }
+  &:hover{ background-color: #d979b6; }
 `
-const SearchContainer = styled.div`
-  border: 1px solid lightgray;
+const SearchContainer = styled.li`
+  border-radius: 20px;
+  height: 46px;
+  display: inline-block;
+  position: relative;
 `
+
 const style = {
     textAlign: 'center',
     color: '#F8EAE9',
@@ -53,11 +55,11 @@ function Header () {
           <div className="clearfix"></div>
             <Container>
               <Wrapper><Link to ='/' style={style}>INICIO</Link></Wrapper>
+              <Wrapper><Link to ='/tienda' style={style}>TIENDA</Link></Wrapper>
               <Wrapper><Link to ='/galeria' style={style}>GALERÍA</Link></Wrapper>
-              <Wrapper><Link to ='/contacto' style={style}>CONTACTO</Link></Wrapper>
               <SearchContainer>
-                input
-                <Search />
+                <input style={{ border: '3px solid white', borderRadius: '10px' }}/>
+                <Search style={{ color: 'white', position: 'absolute', top: '1rem', marginLeft:'0.5rem' }} />
               </SearchContainer>
             </Container>
         </header>

@@ -7,7 +7,7 @@ import TomoyoAva from '../src/imgs/TomoyoAva.png';
 function App() {
   return (
     <div className="App">
-      {/* <Extras/> */}
+      <Extras/>
       <section className="global">
         <Header />
         <div id="posts">
@@ -19,7 +19,7 @@ function App() {
               El manga fue adaptado en una serie de televisión anime de 70 episodios por Madhouse que se emitió en el canal de televisión por satélite japonés NHK BS2 desde abril de 1998 hasta marzo de 2000. Otros medios de comunicación incluyen dos películas de anime, videojuegos, libros de arte, libros ilustrados y cómics de películas. Tokyopop publicó el manga en inglés en Norteamérica desde marzo de 2000 hasta agosto de 2003. Cuando la licencia de Tokyopop expiró, Dark Horse Manga publicó la serie en ediciones ómnibus desde octubre de 2010 hasta septiembre de 2012. El anime fue doblado al inglés por Omni Productions, de Hong Kong, y se emitió en el sudeste asiático y el sur de Asia en el canal Animax Asia.
 
               Nelvana concedió la licencia de la serie de televisión y la primera película para Norteamérica con el título en inglés de Cardcaptors, que se emitió por primera vez en Kids' WB de junio de 2000 a diciembre de 2001. Los 70 episodios fueron doblados; mientras que otros territorios de habla inglesa recibieron la serie completa, la versión emitida en la televisión norteamericana estaba muy editada en 39 episodios. La serie de televisión y las películas fueron sublicenciadas por Geneon, que las publicó sin editar con subtítulos en inglés.
-              <a href="#" className="button-plus">Leer más</a>
+              <a href='https://es.wikipedia.org/wiki/Cardcaptor_Sakura' target="_blank" rel="noopener noreferrer" className="button-plus">Leer más</a>
             </p>
           </article>
         </div>
@@ -31,7 +31,7 @@ function App() {
               Tengo acceso a la tecnología de la empresa de mi madre, y suministro a Sakura y a Kerberos diferentes dispositivos de comunicación.
             </p>
           </div>
-          <div id="loguear">
+          {/* <div id="loguear">
             <h4><span>Iniciar sesión</span></h4>
             <form>
               <label htmlFor="name">Nombre</label>
@@ -42,7 +42,7 @@ function App() {
               <input type="password" name="password" id="form_password" />
               <input type="submit" id="button-submit" value="Ingresar" />
             </form>
-          </div>
+          </div> */}
         </aside>
         <div className="clearfix"></div>
       </section>

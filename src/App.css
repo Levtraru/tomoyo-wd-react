@@ -6,10 +6,10 @@
 body{
   background-attachment: fixed;
   font-family: Helvetica, Arial;
-  cursor: url('https://i.ibb.co/PFTJL9T/Pointer.png'), auto;
+  cursor: url('https://i.postimg.cc/Ss4ccLkQ/Pointer.png'), auto;
 }
 a{
-  cursor: url('https://i.ibb.co/9YbRYbp/Cursor2.png'), auto;
+  cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
 }
 .global{
   border-radius: 20px;
@@ -110,7 +110,7 @@ form textarea{
 }
 
 #button-submit{
-  cursor: url('https://i.ibb.co/9YbRYbp/Cursor2.png'), auto;
+  cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
   background-color: white;
   padding: 10px;
   border: 1px solid white;

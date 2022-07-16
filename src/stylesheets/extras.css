@@ -3,13 +3,13 @@
     font-weight: bold;
     /* display: none; */
     position: fixed;
-    margin-top: 1rem;
-    margin-left: 87vw;
-    padding: 1rem;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    padding: 0.8rem;
     top: 5%;
     height: auto;
     line-height: 30px;
-    background-color: rgba(224, 84, 178, 0.7);
+    background-color: #d979b6;
     border-radius: 20px;
 }
 #bienvenido a{
@@ -35,40 +35,6 @@ footer{
     line-height: 47px;
     border-radius: 20px;
 }
-#theme-selector{
-    position: fixed;
-    top: 40%;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 40px;
-    height: 135px;
-}
-#to-base,
-#to-dark,
-#to-golden,
-#to-lilac{
-    width: 25px;
-    height: 25px;
-    border: 1px solid white;
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    cursor: url('../imgs/cursores/Cursor2.png'), auto;
-}
-
-#to-base{
-    background: #d979b6;
-}
-#to-dark{
-    background: #160907;
-}
-#to-golden{
-    background: #D9C379;
-}
-#to-lilac{
-    background: #9879D9;
-}
-
 .subir{
     color: white;
     display: block;

@@ -56,7 +56,7 @@ function Header () {
             <Container>
               <Wrapper><Link to ='/' style={style}>INICIO</Link></Wrapper>
               <Wrapper><Link to ='/tienda' style={style}>TIENDA</Link></Wrapper>
-              <Wrapper><Link to ='/galeria' style={style}>GALERÍA</Link></Wrapper>
+              <Wrapper><Link to ='/productos' style={style}>PRODUCTOS</Link></Wrapper>
               <SearchContainer>
                 <input style={{ border: '3px solid white', borderRadius: '10px' }}/>
                 <Search style={{ color: 'white', position: 'absolute', top: '1rem', marginLeft:'0.5rem' }} />

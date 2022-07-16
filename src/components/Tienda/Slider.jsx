@@ -4,11 +4,11 @@ import {
     BsFillCaretRightFill as ArrowR
 } from 'react-icons/bs'
 import { useState } from "react";
-import { sliderItems } from "../data";
+import { sliderItems } from "../../data";
 
 const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -18,7 +18,8 @@ const Flecha = styled.div`
     height: 50px;
     background-color: #fff7f7;
     border-radius: 50%;
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     position: absolute;
     top: 0;
@@ -89,7 +90,7 @@ function Slider () {
             </Flecha>
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map(item=>(
-                    <Slide>
+                    <Slide key={item.id}>
                         <ImgContainer>
                             <Img bg={item.bg} src={item.img}/>
                         </ImgContainer>

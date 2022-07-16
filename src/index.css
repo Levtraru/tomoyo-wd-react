@@ -2,3 +2,7 @@ body {
   background: url(../src/imgs/Fondo.png);
   margin: 0;
 }
+button, a{
+  cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
+  border: none;
+}

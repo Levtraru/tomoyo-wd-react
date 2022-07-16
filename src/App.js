@@ -2,11 +2,13 @@ import './App.css';
 import Header from './components/Header';
 import Extras from './components/Extras';
 import Footer from './components/Footer';
+import Anuncio from './components/Anuncio';
 import TomoyoAva from '../src/imgs/TomoyoAva.png';
 
 function App() {
   return (
     <div className="App">
+      <Anuncio />
       <Extras/>
       <section className="global">
         <Header />

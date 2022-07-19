@@ -1,42 +1,9 @@
-#bienvenido{
-    color: white;
-    font-weight: bold;
-    /* display: none; */
-    position: fixed;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-    padding: 0.8rem;
-    top: 5%;
-    height: auto;
-    line-height: 30px;
-    background-color: #d979b6;
-    border-radius: 20px;
-}
-#bienvenido a{
-    font-style: italic;
-}
-#bienvenido p{
+.linkextra{
     cursor: url('../imgs/cursores/Cursor2.png'), auto;
+    color: white;
+    text-decoration: none;
 }
-#bienvenido p:hover{
+.linkextra:hover{
     text-decoration: underline;
     color: #ffceed;
-}
-footer{
-    text-align: center;
-    color: white;
-    height: 47px;
-    width: 65%;
-    background-color: rgba(217, 121, 182, 0.70);
-    margin: 0px auto;
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 47px;
-    border-radius: 20px;
-}
-.subir{
-    color: white;
-    display: block;
-    float: right;
 }

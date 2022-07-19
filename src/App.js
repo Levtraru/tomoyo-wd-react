@@ -33,18 +33,6 @@ function App() {
               Tengo acceso a la tecnología de la empresa de mi madre, y suministro a Sakura y a Kerberos diferentes dispositivos de comunicación.
             </p>
           </div>
-          {/* <div id="loguear">
-            <h4><span>Iniciar sesión</span></h4>
-            <form>
-              <label htmlFor="name">Nombre</label>
-              <input type="text" name="name" id="form_name" />
-              <label htmlFor="email">E-mail</label>
-              <input type="text" name="email" id="form_email" />
-              <label htmlFor="password">Contraseña</label>
-              <input type="password" name="password" id="form_password" />
-              <input type="submit" id="button-submit" value="Ingresar" />
-            </form>
-          </div> */}
         </aside>
         <div className="clearfix"></div>
       </section>

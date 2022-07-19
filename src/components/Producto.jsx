@@ -6,7 +6,7 @@ import Footer from './Footer';
 import Anuncio from './Anuncio';
 import Newsletter from './Tienda/Newsletter';
 import FooterTienda from './Tienda/FooterTienda';
-import {BsPlusLg as Mas, BsDashLg as Menos} from 'react-icons/bs'
+import AddCont from "./AddCont";
 
 const Wrapper = styled.div`
     padding: 50px;
@@ -63,28 +63,6 @@ const FiltroTalle= styled.select`
     padding: 10px 5px 5px 5px;
 `
 const FiltroTalleOpcion= styled.option``
-const AddCont = styled.div`
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`
-const CantidadCont = styled.div`
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-`
-const Cantidad = styled.span`
-    user-select: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid #d979b6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-`
 const Boton = styled.button`
     user-select: none;
     margin-left: 30px;
@@ -101,11 +79,6 @@ const Boton = styled.button`
 `
 
 function Producto () {
-
-    const [cantidad, setCantidad] = useState(1);
-
-    const sumar = () => {setCantidad(cantidad+1);};
-    const restar = () => {cantidad > 1 ? setCantidad(cantidad-1) : setCantidad(1)};
 
     return (
         <>
@@ -140,16 +113,9 @@ function Producto () {
                                 </FiltroTalle>
                             </Filtro>
                         </FiltroCont>
-                        <AddCont>
-                            <CantidadCont>
-                                <Menos onClick={restar}
-                                style={{cursor: "url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto"}}/>
-                                <Cantidad>{cantidad}</Cantidad>
-                                <Mas onClick={sumar}
-                                style={{cursor: "url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto"}}/>
-                            </CantidadCont>
-                            <Boton>AGREGAR</Boton>
-                        </AddCont>
+                        <div style={ {display: 'flex', alignItems: 'center'}}>
+                        <AddCont />
+                        <Boton>AGREGAR</Boton></div>
                     </Info>
                 </Wrapper>
                 <Newsletter />

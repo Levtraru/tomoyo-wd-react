@@ -2,19 +2,6 @@ import { Link } from 'react-router-dom'
 import { BsSearch as Search } from 'react-icons/bs';
 import styled from 'styled-components';
 
-const Logo = styled.div`
-  border-radius: 30px;
-  font-size: 30px;
-  letter-spacing: 4px;
-  line-height: 75px;
-  background: #d979b6;
-  color: #F8EAE9;
-  width: 100%;
-  height: 80px;
-  margin-bottom: 20px;
-  text-align: center;
-  float: left;
-`
 const Container = styled.div`
   text-align: center;
   border-radius: 30px;
@@ -38,25 +25,38 @@ const SearchContainer = styled.li`
   position: relative;
 `
 
-const style = {
+const linkstyle = {
     textAlign: 'center',
     color: '#F8EAE9',
     textDecoration: 'none',
     paddingLeft: '50px',
     paddingRight: '50px',
+    fontWeight: '500',
+    fontSize:'15px',
   }
+const logostyle = {
+  borderRadius: '30px',
+  fontSize: '30px',
+  letterSpacing: '4px',
+  lineHeight: '75px',
+  background: '#d979b6',
+  color: '#F8EAE9',
+  width: '100%',
+  height: '80px',
+  marginBottom: '20px',
+  textAlign: 'center',
+  float: 'left',
+  textDecoration: 'none',}
 
 function Header () {
     return (
         <header>
-          <Logo>
-            <h1>Tomoyo no Showroom</h1>
-          </Logo>
+            <Link to ='/' style={logostyle}><h1>Tomoyo no Showroom</h1></Link>
           <div className="clearfix"></div>
             <Container>
-              <Wrapper><Link to ='/' style={style}>INICIO</Link></Wrapper>
-              <Wrapper><Link to ='/tienda' style={style}>TIENDA</Link></Wrapper>
-              <Wrapper><Link to ='/productos' style={style}>PRODUCTOS</Link></Wrapper>
+              <Wrapper><Link to ='/' style={linkstyle}>INICIO</Link></Wrapper>
+              <Wrapper><Link to ='/tienda' style={linkstyle}>TIENDA</Link></Wrapper>
+              <Wrapper><Link to ='/productos' style={linkstyle}>PRODUCTOS</Link></Wrapper>
               <SearchContainer>
                 <input style={{ border: '3px solid white', borderRadius: '10px' }}/>
                 <Search style={{ color: 'white', position: 'absolute', top: '1rem', marginLeft:'0.5rem' }} />

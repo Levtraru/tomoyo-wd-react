@@ -4,6 +4,10 @@ import App from './App';
 import PaginaProductos from './components/PaginaProductos';
 import Tienda from './components/Tienda/Tienda';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Producto from './components/Producto';
+import Registrarse from './components/Registrarse';
+import Login from './components/Login';
+import Chango from './components/Chango';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -13,6 +17,10 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="tienda" element={<Tienda />} />
       <Route path="productos" element={<PaginaProductos />} />
+      <Route path="producto" element={<Producto />} />
+      <Route path="registrarse" element={<Registrarse />} />
+      <Route path="login" element={<Login />} />
+      <Route path="chango" element={<Chango />} />
     </Routes>
   </BrowserRouter>
 );

@@ -49,7 +49,7 @@ function PaginaProductos () {
                 <Opcion value='6'>Verde</Opcion>
               </Seleccionar>
               <Seleccionar defaultValue={'DEFAULT'}>
-                <Opcion value='DEFAULT' disabled>Tamaño</Opcion>
+                <Opcion value='DEFAULT' disabled>Talle</Opcion>
                 <Opcion value='1'>XS</Opcion>
                 <Opcion value='2'>S</Opcion>
                 <Opcion value='3'>M</Opcion>

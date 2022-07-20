@@ -73,9 +73,22 @@ const ContactoItem = styled.div`
 const Pago = styled.img`
     width: 100%;
 `
+const Arriba = styled.div`
+    cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
+    float:right;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #d979b6;
+    color: white;
+    &:hover{
+    background-color: #ec8dcc;
+    }
+`
 
 function FooterTienda () {
     return (
+        <>
         <Container>
             <Izq>
                 <Logo>Tomoyo no Showroom</Logo>
@@ -105,8 +118,14 @@ function FooterTienda () {
                 <ContactoItem><Phone style={{marginRight:'10px'}}/>+34 11 4567 8923</ContactoItem>
                 <ContactoItem><Mail style={{marginRight:'10px'}}/>contacto@tomoyonoshowroom.com</ContactoItem>
                 <Pago src="https://www.iberspain.com/img/cms/Tarjetas-TPV-paypal.gif"/>
+                <Arriba
+                    onClick={() => {
+                        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                    }}
+                    >Ir arriba</Arriba>
             </Der>
-        </Container>    
+        </Container>
+        </> 
     );
 }
 

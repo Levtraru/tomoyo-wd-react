@@ -14,7 +14,7 @@ const Container = styled.div`
 function Anuncio() {
   return (
     <Container>
-      ¡¡IMPERDIBLE!! ¡¡ Con una compra superior a los $ 2000 el envío es Gratis !!
+      ¡¡IMPERDIBLE!! ¡¡ Con una compra superior a los $ 100 el envío es Gratis !!
     </Container>
   );
 }

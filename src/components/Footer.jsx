@@ -1,6 +1,5 @@
 import '../stylesheets/extras.css'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     text-align: center;
@@ -15,20 +14,23 @@ const Container = styled.div`
     line-height: 47px;
     border-radius: 20px;
 `
-const link = {
-    cursor: "url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), pointer",
-    color: 'yellow',
-    display: 'block',
-    float: 'right',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-}
-
+const Arriba = styled.span`
+    cursor: url('https://i.postimg.cc/Ss4ccLkQ/Pointer.png'), auto;
+    color: yellow;
+    display: block;
+    float: right;
+    font-weight: bold;
+`
 function Footer () {
+
     return (
         <Container>
             <span>Tomoyo no Showroom by Lev'traru</span>
-            <Link to='/' style={link}>Ir arriba</Link>
+            <Arriba
+            onClick={() => {
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+              }}
+            >Ir arriba</Arriba>
         </Container>);
 }
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useState } from "react";
 import Header from "./Header";
 import Extras from './Extras';
 import Footer from './Footer';

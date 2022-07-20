@@ -21,7 +21,6 @@ const TopBoton = styled.button`
     border: none;
     border-radius: 20px;
     background-color: ${(props)=>props.color};
-    font-style: 20px;
     color: white;
     &:hover{
         background:
@@ -40,6 +39,39 @@ const Bot = styled.div`
     justify-content: space-between;
 `
 const Info = styled.div` flex: 3; `
+const Resumen = styled.div`
+    background: white;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 17vw;
+    width: 35%;
+`
+const ResumenTitulo = styled.h1`
+    font-weight: 300;
+`
+const ResumenItem = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-weight: ${(props)=>props.tipo === 'total' && '500'};
+    font-size: ${(props)=>props.tipo === 'total' && '24px'};
+`
+const ResumenItemTexto = styled.span`
+    margin-right: 30px;
+`
+const ResumenItemPrecio = styled.span`
+`
+const ResumenBoton = styled.button`
+    float: left;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+`
 
 function Chango () {
     return (
@@ -87,7 +119,22 @@ function Chango () {
                                 talle='36'
                                 precio='$ 40'
                             />
-                            {/* <Resumen>Resumen</Resumen> */}
+                            <Resumen>
+                                <ResumenTitulo>RESUMEN DE ORDEN</ResumenTitulo>
+                                    <ResumenItem>
+                                        <ResumenItemTexto>Subtotal</ResumenItemTexto><ResumenItemPrecio>$ 130</ResumenItemPrecio>
+                                    </ResumenItem>
+                                    <ResumenItem>
+                                        <ResumenItemTexto>Costo de Envio</ResumenItemTexto><ResumenItemPrecio>$ 5</ResumenItemPrecio>
+                                    </ResumenItem>
+                                    <ResumenItem>
+                                        <ResumenItemTexto>Promoción - Envio Gratis:</ResumenItemTexto><ResumenItemPrecio>$ -5</ResumenItemPrecio>
+                                    </ResumenItem>
+                                    <ResumenItem tipo='total'>
+                                        <ResumenItemTexto>Total</ResumenItemTexto><ResumenItemPrecio>$130</ResumenItemPrecio>
+                                    </ResumenItem>
+                                <ResumenBoton>PASAR POR CAJA</ResumenBoton>
+                            </Resumen>
                         </Info>
                     </Bot>
                 </Container>

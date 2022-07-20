@@ -1,6 +1,5 @@
 import Header from '../Header';
 import Extras from '../Extras';
-import Footer from '../Footer';
 import Anuncio from '../Anuncio';
 import Slider from './Slider';
 import Categorias from './Categorias';
@@ -20,7 +19,6 @@ function Tienda () {
         <FooterTienda />
         <div className="clearfix"></div>
       </section>
-      <Footer />
         </>
     );
 }

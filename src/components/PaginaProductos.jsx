@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Header from './Header';
 import Extras from './Extras';
-import Footer from './Footer';
 import Anuncio from './Anuncio';
 import FooterTienda from "./Tienda/FooterTienda";
 import Productos from "./Tienda/Productos";
@@ -81,7 +80,6 @@ function PaginaProductos () {
         <FooterTienda />
         <div className="clearfix"></div>
       </section>
-      <Footer />
         </>
     );
 }

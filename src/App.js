@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Extras from './components/Extras';
-import Footer from './components/Footer';
+import FooterTienda from './components/Tienda/FooterTienda'
 import Anuncio from './components/Anuncio';
 import TomoyoAva from '../src/imgs/TomoyoAva.png';
 
@@ -35,8 +35,8 @@ function App() {
           </div>
         </aside>
         <div className="clearfix"></div>
+        <FooterTienda />
       </section>
-      <Footer />
     </div>
   );
 }

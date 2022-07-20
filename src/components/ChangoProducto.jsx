@@ -20,6 +20,7 @@ import AddCont from "./AddCont"
     const ProdNombre = styled.span``
     const ProdId = styled.span``
     const ProdColor = styled.div`
+        border: 0.5px solid gray;
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -36,6 +37,7 @@ import AddCont from "./AddCont"
     const ProdPrecio = styled.div`
         font-size: 30px;
         font-weight: 300;
+        margin-top: 25px;
         margin-right: 25px;
     `
     const Hr = styled.hr`

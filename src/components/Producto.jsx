@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Header from "./Header";
 import Extras from './Extras';
 import Anuncio from './Anuncio';
-import Newsletter from './Tienda/Newsletter';
 import FooterTienda from './Tienda/FooterTienda';
 import AddCont from "./AddCont";
 
@@ -116,7 +115,6 @@ function Producto () {
                         <Boton>AGREGAR</Boton></div>
                     </Info>
                 </Wrapper>
-                <Newsletter />
                 <FooterTienda />
                 <div className="clearfix"></div>
             </section>

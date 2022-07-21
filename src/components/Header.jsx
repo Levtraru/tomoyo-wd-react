@@ -38,9 +38,12 @@ const Container = styled.div`
 `
 const Wrapper = styled.li`
   border-radius: 1.8em;
-  height: 2em;
+  height: 3em;
   display: inline-block;
   &:hover{ background-color: #d979b6; }
+  @media only screen and (max-width:420px){
+    height: 2em;
+  }
   
 `
 const SearchContainer = styled.li`

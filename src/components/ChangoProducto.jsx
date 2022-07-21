@@ -5,12 +5,20 @@ import AddCont from "./AddCont"
     const Producto = styled.div`
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width:420px){
+            flex-direction: column;
+        }
     `
     const ProdDetalle = styled.div`
         flex: 2;
         display: flex;
     `
-    const Img = styled.img` width: 200px; `
+    const Img = styled.img` width: 200px; 
+    
+    @media only screen and (max-width:420px){
+        margin-bottom: 2rem;
+    }
+    `
     const Detalles = styled.div`
         padding: 20px;
         display: flex;

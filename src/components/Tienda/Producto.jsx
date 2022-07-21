@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsCartFill as Cart, BsSearch as Search, BsHeartFill as Heart } from 'react-icons/bs';
+import { BsCartFill as Cart, BsArrowUpRightCircleFill as Search, BsHeartFill as Heart } from 'react-icons/bs';
 
 const Info = styled.div`
     opacity: 0;

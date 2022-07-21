@@ -1,9 +1,0 @@
-.linkextra{
-    cursor: url('https://i.postimg.cc/Ss4ccLkQ/Pointer.png'), auto;
-    color: white;
-    text-decoration: none;
-}
-.linkextra:hover{
-    text-decoration: underline;
-    color: #ffceed;
-}

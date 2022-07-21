@@ -1,4 +1,3 @@
-import '../stylesheets/extras.css'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { BsCartFill as Cart } from 'react-icons/bs';
@@ -7,25 +6,42 @@ const Container = styled.div`
     color: white;
     font-weight: bold;
     position: fixed;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-    padding: 0.8rem;
-    top: 5%;
+    margin-left: 1.5em;
+    padding: 0.8em;
+    top: 9%;
     height: auto;
-    line-height: 30px;
-    background-color: #d979b6;
-    border-radius: 20px;
+    line-height: 1.7em;
+    background-color: #d979b6ba;
+    border-radius: 1.2em;
+    display: flex;
+    flex-direction: column;
+    span{
+        font-size: 1.25em;
+        margin-left: 2rem;
+    }
+    @media only screen and (max-width:420px){
+        width: 50vw;
+        top: 1.2%;
+        margin-left: 1em;
+        padding: 0.2em 0.2em 0 0.2em;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.8em;
+        font-weight: 300;
+        span{
+            margin-left: 0;
+        }
+    }
 `
 
 function Extras () {
     return (
         <Container>
-            <p><Link to ='/chango'>
-                    <Cart style={{fontSize: '20px', marginLeft: '2rem'}} className='linkextra'/>
-                </Link>
-            </p>
-            <p><Link to='/registrarse' className='linkextra'>Registrarse</Link></p>
-            <p><Link to='/login' className='linkextra'>Ingresar</Link></p>
+            <Link to ='/chango'>
+                <span><Cart className='linkextra'/></span>
+            </Link>
+            <Link to='/registrarse' className='linkextra'>Registrarse</Link>
+            <Link to='/login' className='linkextra'>Ingresar</Link>
         </Container>
     );
 }

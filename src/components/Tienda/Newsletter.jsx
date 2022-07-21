@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { IoSend as Send} from 'react-icons/io5'
 
 const Container = styled.div`
-    height: 60vh;
-    background-color: #F8EAE9;
+    height: 40vh;
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;

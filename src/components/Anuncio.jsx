@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 30px;
+  height: 2em;
+  line-height: 170%;
   background-color: teal;
   color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 0.88em;
+  @media only screen and (max-width:420px){
+    font-size: 0.6em;
+    height: 1.4em;
+    line-height: 120%;
+  }
 `
 
 function Anuncio() {

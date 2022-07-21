@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
+
 import {
     BsFacebook as Facebook,
     BsInstagram as Instagram,
@@ -10,15 +12,23 @@ import {
 } from 'react-icons/bs'
 
 const Container = styled.div`
+    margin-top: 3em;
     display: flex;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
+  @media only screen and (max-width:420px){
+    font-size: 0.8em;
+    flex-wrap: wrap;
+  }
 `
 const Izq = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.2em;
+    @media only screen and (max-width:420px){
+        padding: 1.2em 1.2em 0 1.2em;
+    }
 `
 const Logo = styled.h1`
     
@@ -45,6 +55,9 @@ const Centro = styled.div`
     margin-top: 5px;
     flex: 1;
     padding: 20px;
+    @media only screen and (max-width:420px){
+        padding: 1.2em 1.2em 0 1.2em;
+    }
 `
 const Titulo = styled.h3`
     margin-bottom: 30px;
@@ -64,6 +77,9 @@ const Der = styled.div`
     margin-top: 5px;
     flex: 1;
     padding: 20px;
+    @media only screen and (max-width:420px){
+        padding: 0 1.2em 1.2em;
+    }
 `
 const ContactoItem = styled.div`
     margin-bottom: 20px;
@@ -122,7 +138,7 @@ function FooterTienda () {
                     onClick={() => {
                         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
                     }}
-                    >Ir arriba</Arriba>
+                >Ir arriba</Arriba>
             </Der>
         </Container>
         </> 

@@ -11,14 +11,15 @@ body{
 }
 a{
   cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
+  text-decoration: none;
 }
 .global{
-  border-radius: 20px;
-  width: 70%;
+  border-radius: 1em;
+  width: 70vw;
   margin: 0px auto;
-  margin-top: 30px;
-  padding: 25px;
-  background: #F8EAE9;
+  margin-top: 2em;
+  padding: 1.5em;
+  background: rgba(248, 234, 233, 0.5);
   box-shadow: 0px 0px 12px #C88CA1;
 }
 .clearfix{
@@ -26,67 +27,68 @@ a{
   clear: both;
 }
 #posts{
-  width: 60%;
+  background: rgba(248, 234, 233, 0.9);
+  padding: 1em;
+  border-radius: 2em;
+  width: 58%;
   float: left;
 }
 .post{
-  padding: 5px;
-  overflow: auto;
-
+  padding: 0.3em;
 }
 h2{
-  font-size: 35px;
+  font-size: 2.2em;
   color: #333;
 }
 .post .date{
   display: block;
   color: gray;
-  margin-top: 5px;
+  margin-top: 0.2em;
 }
 .post p{
-  margin-top: 10px;
-  margin-bottom: 20px;
-  line-height: 20px;
+  margin-top: 0.6em;
+  line-height: 1.3em;
   text-align: justify;
 }
 .button-plus{
   color: white;
   border-radius: 20px;
-  margin-top: 15px;
-  font-size: 15px;
+  margin-top: 1em;
   text-align: center;
   display: block;
-  padding: 10px;
+  padding: 0.6em;
   background-color: #d979b6;
   text-decoration: none;
-  width: 70px;
+  width: 15%;
   float: right;
 }
-
 #sidebar{
-  width: 31%;
+  background: rgba(248, 234, 233, 0.9);
+  padding: 1em;
+  border: solid 1px #FBC5D8;
+  border-radius: 2em;
+  width: 32%;
   float: right;
 }
 #sidebar h4{
   border-radius: 20px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
   text-align: center;
-  line-height: 25px;
+  line-height: 1.7em;
   color: #333;
   background: url("../src/imgs/lines.png") repeat;
 }
 #sidebar h4 span{
   border-radius: 20px;
   background-color: white;
-  padding: 10px;
+  padding: 0.6em;
 }
 #sidebar img{
   width: 100%;
   border-radius: 20px;
 }
 #sidebar p{
-  font-size: 15px;
+  margin-top: 1em;
   text-align: justify;
 }
 
@@ -98,7 +100,7 @@ form input[type="password"]{
   border-radius: 20px;
   border: 1px solid #F8EAE9;
   width: 96%;
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
   margin-top: 5px;
   box-shadow: 0px 0px 2px #d979b6;
   background-color: #F8EAE9;
@@ -113,11 +115,69 @@ form textarea{
 #button-submit{
   cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
   background-color: white;
-  padding: 10px;
+  padding: 0.6em;
   border: 1px solid white;
   border-radius: 20px;
   float: center;
   width: 30%;
   position: relative;
   left: 35%;
+}
+.linkextra{
+  cursor: url('https://i.postimg.cc/Ss4ccLkQ/Pointer.png'), auto;
+  color: white;
+  text-decoration: none;
+}
+.linkextra:hover{
+  text-decoration: underline;
+  color: #ffceed;
+}
+.links-header{
+  text-align: center;
+  color: #F8EAE9;
+  padding-left: 3.33em;
+  padding-right: 3.33em;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media only screen and (max-width:420px){
+  .global{
+    margin-top: 2.2em;
+    width: 80vw;
+  }
+  .links-header{
+    padding: 0 1em;
+    font-size: 0.8rem;
+  }
+  #posts{
+    width: 40vh;
+    height: 40vh;
+    overflow: scroll;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  .post .date{
+    font-size: 0.8rem;
+  }
+  .post p{
+    font-size: 0.8rem;
+  }
+  .button-plus{
+    width: 25%;
+  }
+  #sidebar{
+    width: 40vh;
+    margin-top: 2em;
+  }
+  #sidebar h4 span{
+    font-size: 0.8rem;
+  }
+  #sidebar h4{
+    line-height: 1em;
+  }
+  #sidebar p{
+    font-size: 0.8rem;
+  }
 }

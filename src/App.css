@@ -11,7 +11,6 @@ body{
 }
 a{
   cursor: url('https://i.postimg.cc/kgVNCXTC/Cursor2.png'), auto;
-  text-decoration: none;
 }
 .global{
   border-radius: 1em;
@@ -135,6 +134,7 @@ form textarea{
 .links-header{
   text-align: center;
   color: #F8EAE9;
+  text-decoration: none;
   padding-left: 3.33em;
   padding-right: 3.33em;
   font-weight: 400;
@@ -151,7 +151,7 @@ form textarea{
     font-size: 0.8rem;
   }
   #posts{
-    width: 40vh;
+    width: 72vw;
     height: 40vh;
     overflow: scroll;
   }
@@ -168,7 +168,7 @@ form textarea{
     width: 25%;
   }
   #sidebar{
-    width: 40vh;
+    width: 72vw;
     margin-top: 2em;
   }
   #sidebar h4 span{

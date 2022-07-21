@@ -20,8 +20,9 @@ const Container = styled.div`
         margin-left: 2rem;
     }
     @media only screen and (max-width:420px){
+        position: absolute;
         width: 50vw;
-        top: 1.2%;
+        top: 1.9%;
         margin-left: 1em;
         padding: 0.2em 0.2em 0 0.2em;
         flex-direction: row;

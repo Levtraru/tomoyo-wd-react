@@ -17,7 +17,7 @@ const Container = styled.div`
     border-radius: 20px;
   @media only screen and (max-width:420px){
     font-size: 0.8em;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 `
 const Izq = styled.div`

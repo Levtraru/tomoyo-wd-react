@@ -9,15 +9,25 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media only screen and (max-width:420px){
+        margin-top: 2em;
+    }
 `
 const Titulo = styled.h1`
-    font-size: 70px;
-    margin-bottom: 20px;
+    font-size: 4.4rem;
+    margin-bottom: 0.3em;
+    @media only screen and (max-width:420px){
+        font-size: 3rem;
+        letter-spacing: 0.1em;
+    }
 `
 const Desc = styled.div`
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 0.9em;
+    @media only screen and (max-width:420px){
+        text-align: center;
+    }
 `
 const InputContainer = styled.div`
     width: 50%;
@@ -26,6 +36,9 @@ const InputContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgray;
+    @media only screen and (max-width:420px){
+        width: 80%;
+    }
 `
 const Input = styled.input`
     border: none;

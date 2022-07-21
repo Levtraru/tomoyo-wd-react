@@ -3,10 +3,13 @@ import { productos } from "../../data";
 import Producto from "./Producto";
 
 const Container = styled.div`
-    padding: 20px;
+    padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media only screen and (max-width:420px){
+        padding: 0;
+    }
 `
 
 function Productos () {

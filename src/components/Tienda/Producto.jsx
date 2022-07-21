@@ -14,50 +14,63 @@ const Info = styled.div`
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
+    @media only screen and (max-width:420px){
+        opacity: 0.7;
+    }
 `
-
 const Container = styled.div`
     flex: 1;
-    margin: 5px;
-    min-width: 280px;
-    height: 350px;
+    margin: 0.34em;
+    min-width: 15em;
+    height: 21.8em;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 20%;
     position: relative;
-
     &:hover ${Info}{
         opacity: 1;
         background-color: rgba (0, 0, 0, 0.2);
     }
+    @media only screen and (max-width:420px){
+        /* margin: 1em; */
+        min-width: 6.1em;
+        height: 10em;
+        border-radius: 2em;
+    }
 `
 const Circulo = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 13em;
+    height: 13em;
     border-radius: 50%;
     background-color: #d979b6;
     position: absolute;
+    @media only screen and (max-width:420px){
+        width: 5em;
+        height: 5em;
+    }
 `
 const Img = styled.img`
     height: 85%;
     z-index: 2;
 `
 const Icono = styled.button`
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 0.75em;
     transition: all 0.5s ease;
-
     &:hover{
         background-color: #ffd000;
         transform: scale(1.1);
+    }
+    @media only screen and (max-width:420px){
+        font-size: 0.4rem;
     }
 `
 

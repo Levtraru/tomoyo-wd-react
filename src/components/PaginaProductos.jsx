@@ -11,10 +11,17 @@ const Container = styled.div`
 `
 const FiltroCont = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 `
 const Filtro = styled.div`
-  margin: 20px;
+  margin: 1.4em;
+  @media only screen and (max-width:420px){
+    margin: 0 0.4em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
 `
 const Seleccionar = styled.select`
   padding: 10px;
@@ -24,6 +31,10 @@ const Seleccionar = styled.select`
   border-top-right-radius: 20px;
   color: #333; 
   font-size: 1.2em;
+  @media only screen and (max-width:420px){
+    margin-bottom: 1em;
+    font-size: 0.8em;
+  }
 `
 const Opcion = styled.option`
 `

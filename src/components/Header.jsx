@@ -38,7 +38,7 @@ const Container = styled.div`
 `
 const Wrapper = styled.li`
   border-radius: 1.8em;
-  height: 3em;
+  height: 2em;
   display: inline-block;
   &:hover{ background-color: #d979b6; }
   
@@ -48,8 +48,9 @@ const SearchContainer = styled.li`
   position: relative;
 `
 const SearchInput = styled.input`
-  border: 3px solid white;
-  border-radius: 0.8em;
+  border: none;
+  padding: 0.4em;
+  border-radius: 0.9em;
 `
 
 function Header () {
@@ -62,7 +63,7 @@ function Header () {
               <Wrapper><Link to ='/tienda' className='links-header'>TIENDA</Link></Wrapper>
               <Wrapper><Link to ='/productos' className='links-header'>PRODUCTOS</Link></Wrapper>
               <SearchContainer>
-                <SearchInput />
+                <SearchInput placeholder='Buscar' />
                 <Search style={{ color: 'white', position: 'absolute', top: '1rem', marginLeft:'0.5rem' }} />
               </SearchContainer>
             </Container>

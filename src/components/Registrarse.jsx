@@ -18,6 +18,9 @@ const Wrapper = styled.div`
     border-radius: 40px;
     padding: 40px;
     background-color: white;
+    @media only screen and (max-width:420px){
+        width: 70%;
+    }
 `
 const Titulo = styled.h1`
     font-size: 24px;

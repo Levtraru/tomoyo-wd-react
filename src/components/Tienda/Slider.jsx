@@ -12,6 +12,9 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    @media only screen and (max-width:420px){
+        display:none;
+    }
 `
 const Flecha = styled.div`
     width: 50px;

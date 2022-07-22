@@ -15,7 +15,7 @@ const Container = styled.div`
   justify-content: center;
 `;
 const Wrapper = styled.div`
-  width: 20%;
+  width: 40%;
   border-radius: 40px;
   padding: 40px;
   background-color: white;
@@ -29,26 +29,29 @@ const Titulo = styled.h1`
 `;
 const Form = styled.form`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 `;
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 10px 0;
+  margin: 20px 10px 0 0;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 10px;
 `;
+const Acuerdo = styled.span`
+  font-size: 12px;
+  margin: 20px 0;
+`;
 const Boton = styled.button`
   user-select: none;
-  width: 60%;
+  width: 40%;
   padding: 15px 20px;
   border: none;
   border-radius: 20px;
   background-color: #d979b6;
   font-style: 20px;
   color: white;
-  margin-bottom: 10px;
 
   &:hover {
     background-color: #ec8dcc;
@@ -61,23 +64,31 @@ const link = {
   textDecoration: "underline",
 };
 
-function Login() {
+function Registro() {
   return (
     <Container>
       <Wrapper>
-        <Titulo>INGRESAR</Titulo>
+        <Titulo>CREAR CUENTA</Titulo>
         <Form>
+          <Input placeholder="Nombre" />
+          <Input placeholder="Apellido" />
+          <Input placeholder="E-mail" />
           <Input placeholder="Usuario" />
           <Input placeholder="Contraseña" />
-          <Boton>INICIAR SESION</Boton>
-          <span style={link}>¿Olvidaste tu contraseña?</span>
-          <Link to="/registro" style={link}>
-            Crear nueva cuenta
-          </Link>
+          <Input placeholder="Confirmar Contraseña" />
+          <Acuerdo>
+            Al crear una cuenta, doy mi consentimiento para que mi información
+            personal sea procesada de acuerdo con la{" "}
+            <b>POLITICA DE PRIVACIDAD</b>
+          </Acuerdo>
+          <Boton>CREAR</Boton>
         </Form>
+        <Link to="/login" style={link}>
+          ¿Ya estás registrado? ¡Ingresa aquí!
+        </Link>
       </Wrapper>
     </Container>
   );
 }
 
-export default Login;
+export default Registro;

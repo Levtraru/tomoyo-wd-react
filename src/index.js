@@ -5,7 +5,7 @@ import PaginaProductos from './components/PaginaProductos';
 import Tienda from './components/Tienda/Tienda';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Producto from './components/Producto';
-import Registrarse from './components/Registrarse';
+import Registro from './components/Registro';
 import Login from './components/Login';
 import Chango from './components/Chango';
 
@@ -18,7 +18,7 @@ root.render(
       <Route path="tienda" element={<Tienda />} />
       <Route path="productos" element={<PaginaProductos />} />
       <Route path="producto" element={<Producto />} />
-      <Route path="registrarse" element={<Registrarse />} />
+      <Route path="registro" element={<Registro />} />
       <Route path="login" element={<Login />} />
       <Route path="chango" element={<Chango />} />
     </Routes>
